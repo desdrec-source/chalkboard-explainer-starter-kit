@@ -1,0 +1,5 @@
+output/
+assets/sfx/originals/
+__pycache__/
+*.pyc
+.venv/

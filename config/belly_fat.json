@@ -1,0 +1,53 @@
+{
+  "name": "belly_fat",
+  "duration": 25.0,
+  "fps": 30,
+  "seed": 7,
+  "fonts": {
+    "title": "assets/fonts/PermanentMarker-Regular.ttf",
+    "body": "assets/fonts/WalterTurncoat-Regular.ttf"
+  },
+  "embolden_fonts": ["body"],
+
+  "title":   {"text": "BELLY FAT?", "time": [0.2, 2.8]},
+  "figures": [
+    {"shape": "body_fat",  "time": [3.0, 4.5]},
+    {"shape": "body_slim", "time": [4.5, 5.9]},
+    {"shape": "arrow", "between": [0, 1], "time": [5.9, 6.9]}
+  ],
+  "caption": {"text": "NO SPOT REDUCTION", "time": [7.0, 8.2]},
+  "sketch":  {"shape": "situp", "time": [8.2, 9.3], "cross_out": [9.3, 10.0]},
+  "list": [
+    {"text": "1. EAT A LITTLE LESS", "icon": "plate",      "time": [10.0, 12.5]},
+    {"text": "2. MORE PROTEIN",      "icon": "protein",    "time": [12.5, 15.0]},
+    {"text": "3. LIFT WEIGHTS",      "icon": "dumbbell",   "time": [15.0, 17.5]},
+    {"text": "4. WALK MORE",         "icon": "footprints", "time": [17.5, 19.5]},
+    {"text": "5. SLEEP",             "icon": "moon",       "time": [19.5, 21.5]}
+  ],
+  "closing": {"text": "BE CONSISTENT", "time": [21.5, 22.4], "underlines": [[22.4, 22.7], [22.7, 23.0]]},
+
+  "layouts": {
+    "9x16": {
+      "size": [1080, 1920],
+      "hand_scale": 0.8,
+      "preview_times": [5, 10, 17, 22],
+      "title":   {"x": 540, "y": 60, "size": 150},
+      "figures": [{"x": 178, "y": 500, "scale": 0.9}, {"x": 440, "y": 500, "scale": 0.9}, {}],
+      "caption": {"x": 280, "y": 1000, "size": 62, "max_width": 400, "line_height": 1.15},
+      "sketch":  {"x": 280, "y": 1450, "scale": 1.0},
+      "list":    {"icon_x": 605, "text_x": 688, "y": [470, 705, 940, 1175, 1405], "size": 54, "max_width": 345, "text_dy": -10},
+      "closing": {"x": 540, "y": 1590, "size": 112}
+    },
+    "16x9": {
+      "size": [1920, 1080],
+      "hand_scale": 0.75,
+      "preview_times": [5, 10, 17, 24.5],
+      "title":   {"x": 960, "y": 34, "size": 124},
+      "figures": [{"x": 205, "y": 330, "scale": 1.0}, {"x": 478, "y": 330, "scale": 1.0}, {}],
+      "caption": {"x": 795, "y": 250, "size": 58, "max_width": 360, "line_height": 1.12},
+      "sketch":  {"x": 795, "y": 715, "scale": 1.0},
+      "list":    {"icon_x": 1150, "text_x": 1235, "y": [255, 382, 509, 636, 763], "size": 56, "max_width": 640, "text_dy": -4},
+      "closing": {"x": 960, "y": 842, "size": 96}
+    }
+  }
+}

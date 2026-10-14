@@ -1,0 +1,7 @@
+numpy>=1.26
+scipy>=1.11
+Pillow>=10.0
+soundfile>=0.12
+pyloudnorm>=0.1.1
+# only needed for code/tools/prepare_samples.py (rebuilding the processed sounds)
+noisereduce>=3.0
